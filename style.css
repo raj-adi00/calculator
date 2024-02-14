@@ -3,6 +3,10 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background: url('noobcoder.jpg') , rgb(144, 141, 140);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 10vh 10vh;
 }
 
 #calculator {
@@ -13,7 +17,8 @@ body {
 
 #screen {
     border: 4px solid black;
-    /* width: 25vw; */
+    background-color: white;
+    opacity: 0.6;
     height: 12vh;
     margin-bottom: 1rem;
     font-size: 2rem;
@@ -59,4 +64,28 @@ body {
     font-size: 2rem;
     font-weight: 600;
     height: 3vh;
+}
+@media only screen and (max-width:910px)
+{
+    .font{
+        font-size: 1.5rem;
+    }
+    .view{
+        font-size: 1.5rem;
+    }
+    #calcuator{
+        width: 35vw;
+    }
+}
+@media only screen and (max-width:732px)
+{
+    .font{
+        font-size:1rem
+    }
+    .btn{
+        height: 4vh;
+    }
+    #calculator{
+        width: 50vw;
+    }
 }
