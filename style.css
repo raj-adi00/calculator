@@ -51,7 +51,6 @@ body {
     grid-column-start: 4;
     border: 3px solid black;
     box-shadow: 5px 5px 5px 5px white inset;
-    /* box-shadow: 15px 15px 15px 15px #1e1a1a61 inset;  */
 }
 
 .font {
@@ -69,6 +68,7 @@ body {
 {
     .font{
         font-size: 1.5rem;
+        font-weight: 700;
     }
     .view{
         font-size: 1.5rem;
@@ -80,7 +80,7 @@ body {
 @media only screen and (max-width:732px)
 {
     .font{
-        font-size:1rem
+    font-weight: 800;
     }
     .btn{
         height: 4vh;

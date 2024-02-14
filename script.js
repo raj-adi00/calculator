@@ -24,11 +24,22 @@ for (let index = 0; index <= 14; index++) {
 clicked_button[16].addEventListener("click", () => {
   document.getElementById("screen").innerText = document.getElementById("screen").innerText.slice(0, document.getElementById("screen").innerText.length - 1);
 });
-clicked_button[15].addEventListener("click",()=>{
-  document.getElementById("screen").innerText="";
+clicked_button[15].addEventListener("click", () => {
+  document.getElementById("screen").innerText = "";
 });
-document.getElementById("equal").addEventListener("click",()=>{
-   let operation=document.getElementById("screen").innerText;
-   document.getElementById("screen").innerText=eval(operation);
+document.getElementById("equal").addEventListener("click", () => {
+  let operation = document.getElementById("screen").innerText;
+  document.getElementById("screen").innerText = eval(operation);
 });
 
+
+document.addEventListener("keydown", function (e) {
+  if ((e.key >= 0 && e.key <= 9) || e.key == '+' || e.key == '-' || e.key == '*' || e.key == '/')
+    document.getElementById("screen").innerText += e.key;
+  else if (e.key == 'Backspace')
+    document.getElementById("screen").innerText = document.getElementById("screen").innerText.slice(0, document.getElementById("screen").innerText.length - 1);
+  else if (e.key == '=' || e.key == 'Enter') {
+    let oper = document.getElementById("screen").innerText;
+    document.getElementById("screen").innerText = eval(oper);
+  }
+});
