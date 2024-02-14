@@ -24,7 +24,10 @@ body {
     font-size: 2rem;
     font-weight: 600;
     text-align: end;
-    overflow: hidden;
+    overflow: auto;
+}
+#screen::-webkit-scrollbar{
+    display: none;
 }
 
 #buttons {
