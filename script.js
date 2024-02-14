@@ -38,7 +38,7 @@ document.addEventListener("keydown", function (e) {
     document.getElementById("screen").innerText += e.key;
   else if (e.key == 'Backspace')
     document.getElementById("screen").innerText = document.getElementById("screen").innerText.slice(0, document.getElementById("screen").innerText.length - 1);
-  else if (e.key == '=' || e.key == 'Enter') {
+  else if (e.key == '=') {
     let oper = document.getElementById("screen").innerText;
     document.getElementById("screen").innerText = eval(oper);
   }
